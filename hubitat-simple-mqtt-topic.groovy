@@ -41,6 +41,7 @@ metadata {
         capability 'Notification'
         capability 'Actuator'
         capability 'Momentary'
+        capability 'PushableButton' // due to RM currently not allowing Momentary as a trigger type
         capability 'Switch'
         capability 'Variable'
 
@@ -48,6 +49,10 @@ metadata {
             [name: 'Payload', type: 'STRING', description: "Broadcast on this device's topic"]
         ]
     }
+}
+
+void installed() {
+    sendEvent([name: 'numberOfButtons', value: 1])
 }
 
 void parse(List<Map> events) {
@@ -64,6 +69,11 @@ void deviceNotification(String message) {
 /* Momentary */
 void push() {
     unimplemented()
+}
+
+/* groovylint-disable-next-line UnusedMethodParameter */
+void push(Number button) {
+    push()
 }
 
 /* Switch */
