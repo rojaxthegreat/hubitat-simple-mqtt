@@ -32,7 +32,7 @@
 
 metadata {
     definition(
-        name: 'Simple MQTT Client Topic',
+        name: 'Simple MQTT Topic',
         namespace: 'cogdev',
         author: 'Seth Kinast <seth@cogdev.net>',
         importUrl:

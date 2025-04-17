@@ -52,7 +52,7 @@ this scenario, please open an issue to discuss.
 
 ## Installation
 
-1. Install the two drivers for the MQTT Client and the MQTT Client Topic (child device).
+1. Install the two drivers for the MQTT Client and the MQTT Topic (child device).
 2. Create a new virtual device with the type `Simple MQTT Client`. You only need one of these for your
    hub, no matter how many topics you want to publish or subscribe to.
 3. In the device preferences, set your broker IP/hostname and port. Username and password are optional
@@ -66,6 +66,11 @@ this scenario, please open an issue to discuss.
 The client will automatically reconnect if the hub is restarted, the broker goes down, or the network
 is disconnected. You can always force a reconnect if anything goes wrong by invoking the `Initialize`
 command.
+
+### Updating
+
+If new versions of the driver are released, just go to the Drivers code and open the driver. Click
+the three-dot menu and choose `Import`. The new driver will be loaded automatically from GitHub.
 
 ## Examples
 
