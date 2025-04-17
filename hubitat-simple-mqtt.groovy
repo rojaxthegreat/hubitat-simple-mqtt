@@ -117,7 +117,7 @@ void reconnect() {
 
 void addTopic(String topic, String label = null) {
     String fullTopic = getTopic(topic)
-    ChildDeviceWrapper cd = addChildDevice('cogdev', 'Simple MQTT Client Topic', fullTopic, [
+    ChildDeviceWrapper cd = addChildDevice('cogdev', 'Simple MQTT Topic', fullTopic, [
         label: label ?: fullTopic,
         name: label ? fullTopic : null,
     ])
