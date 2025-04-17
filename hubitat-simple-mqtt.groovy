@@ -56,7 +56,7 @@ preferences {
         input name: 'brokerIP', type: 'string', title: 'MQTT Broker IP Address', required: true
         input name: 'brokerPort', type: 'string', title: 'MQTT Broker Port', required: true, defaultValue: 1883
         input name: 'topicPrefix', type: 'string', title: 'MQTT Topic Prefix',
-            description: 'namespace containing driver events', required: true, defaultValue: 'hubitat'
+            description: 'optional namespace for all driver events'
         input name: 'brokerUsername', type: 'string', title: 'MQTT User'
         input name: 'brokerPassword', type: 'password', title: 'MQTT Password'
     }

@@ -57,7 +57,9 @@ this scenario, please open an issue to discuss.
    hub, no matter how many topics you want to publish or subscribe to.
 3. In the device preferences, set your broker IP/hostname and port. Username and password are optional
    if your broker does not require authentication.
-4. Optionally set a topic prefix that all of your topics will use as a namespace.
+4. (Optional) set a topic prefix that all of your topics will use as a namespace. For example, setting the
+   prefix to `hubitat` means that all your topics will look like `hubitat/topicOne`. Leave blank to manage
+   the namespaces on a per-topic basis.
 5. Create a new topic using the driver's Add Topic command. The label will show up in Rule Machine.
    (If no label is provided, the topic name is used instead)
 
