@@ -84,7 +84,7 @@ void parse(String message) {
 
     ChildDeviceWrapper targetDevice = getChildDevices().find { cd -> cd.getDataValue('topic') == parsedMessage.topic }
     if (targetDevice) {
-        events = [[name: 'pushed', value: 0, isStateChange: true]]
+        events = [[name: 'pushed', value: 1, isStateChange: true]]
         if (parsedMessage.payload == 'true' || parsedMessage.payload == 'on') {
             events += [name: 'switch', value: 'on']
         } else if (parsedMessage.payload == 'false' || parsedMessage.payload == 'off') {
