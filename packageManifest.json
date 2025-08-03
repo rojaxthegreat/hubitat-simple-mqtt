@@ -1,0 +1,35 @@
+{
+  "packageName": "hubitat-simple-mqtt",
+  "author": "Rojaxthegreat forked from sethkinast/hubitat-simple-mqtt",
+  "version": "0.1",
+  "minimumHEVersion": "2.1.9",
+  "dateReleased": "2025-08-03",
+  "drivers": [
+    {
+      "id": "7a9f2ab9-332e-4ddb-834b-da73a9fa48be",
+      "name": "",
+      "namespace": "",
+      "location": "https://raw.githubusercontent.com/sethkinast/hubitat-simple-mqtt/refs/heads/master/hubitat-simple-mqtt-topic.groovy",
+      "required": true,
+      "alternateNames": [
+        {
+          "namespace": "rojaxthegreat",
+          "name": "Simple MQTT Topic"
+        }
+      ]
+    },
+    {
+      "id": "3a7ee26f-0fdb-4e4a-b1d9-cdfd50763909",
+      "name": "",
+      "namespace": "",
+      "location": "https://raw.githubusercontent.com/sethkinast/hubitat-simple-mqtt/refs/heads/master/hubitat-simple-mqtt.groovy",
+      "required": true,
+      "alternateNames": [
+        {
+          "namespace": "rojaxthegreat",
+          "name": "Simple MQTT Client"
+        }
+      ]
+    }
+  ]
+}
