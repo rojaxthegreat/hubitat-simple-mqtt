@@ -52,6 +52,7 @@ this scenario, please open an issue to discuss.
 
 ## Installation
 
+Optional Hubitat Package Manager, Install from URL: https://raw.githubusercontent.com/rojaxthegreat/hubitat-simple-mqtt/refs/heads/master/packageManifest.json
 1. Install the two drivers for the MQTT Client and the MQTT Topic (child device).
 2. Create a new virtual device with the type `Simple MQTT Client`. You only need one of these for your
    hub, no matter how many topics you want to publish or subscribe to.
